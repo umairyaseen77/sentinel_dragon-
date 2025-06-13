@@ -2,3 +2,19 @@ __pycache__/
 *.pyc
 .poetry/
 
+=======
+=======
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Poetry virtualenv
+poetry.lock

@@ -5,5 +5,12 @@ repos:
       - id: black
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.1.6
+=======
+=======
+    rev: 24.4.2
+    hooks:
+      - id: black
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.5
     hooks:
       - id: ruff

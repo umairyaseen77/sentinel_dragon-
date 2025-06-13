@@ -4,6 +4,11 @@ on:
   pull_request:
   push:
     branches: [main, dev]
+=======
+=======
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   build:
@@ -23,3 +28,18 @@ jobs:
         run: poetry run ruff .
       - name: Pytest
         run: poetry run pytest
+=======
+=======
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: snok/install-poetry@v1
+      - name: Install dependencies
+        run: poetry install --with dev
+      - name: Run black
+        run: poetry run black --check .
+      - name: Run ruff
+        run: poetry run ruff check .
+      - name: Run tests
+        run: poetry run pytest -q
