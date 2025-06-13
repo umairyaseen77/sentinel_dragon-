@@ -1,6 +1,8 @@
 __pycache__/
 *.pyc
 .poetry/
+
+=======
 =======
 # Byte-compiled / optimized / DLL files
 __pycache__/

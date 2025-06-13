@@ -5,6 +5,7 @@ on:
   push:
     branches: [main, dev]
 =======
+=======
   push:
     branches: [main]
   pull_request:
@@ -27,6 +28,7 @@ jobs:
         run: poetry run ruff .
       - name: Pytest
         run: poetry run pytest
+=======
 =======
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
