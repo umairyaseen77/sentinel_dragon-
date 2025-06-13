@@ -1,3 +1,7 @@
+__pycache__/
+*.pyc
+.poetry/
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -12,4 +16,3 @@ __pycache__/
 
 # Poetry virtualenv
 poetry.lock
-

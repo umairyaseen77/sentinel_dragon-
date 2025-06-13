@@ -1,4 +1,17 @@
 [tool.poetry]
+name = "sentinel_dragon"
+version = "0.1.0"
+description = "Sentinel Dragon project"
+authors = ["Example <example@example.com>"]
+packages = [{ include = "sentinel_dragon" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+=======
 name = "sentinel-dragon"
 version = "0.1.0"
 description = ""
@@ -12,6 +25,7 @@ python = "^3.11"
 [tool.poetry.extras]
 playwright = ["playwright"]
 
+=======
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4"
 black = "^24.4"
@@ -24,8 +38,12 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]
+target-version = ['py311']
+=======
 line-length = 88
 
 [tool.ruff]
 line-length = 88
+select = ["E", "F", "W", "I" ]
+=======
 
